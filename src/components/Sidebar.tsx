@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { LayoutDashboard, Menu, X } from "lucide-react";
+import { CirclePlus, CircleUser, LayoutDashboard, Menu, X } from "lucide-react";
 import { logout } from "@/api/auth.service";
 import { Button } from "./ui/button";
 
 const navItems = [
-  { name: "Home", path: "/", icon: LayoutDashboard },
+  { name: "My Spaces", path: "/", icon: LayoutDashboard },
+  { name: "Create Space", path: "/create-space", icon: CirclePlus },
+  { name: "My Profile", path: "/profile", icon: CircleUser },
 ];
 
 const Sidebar = () => {

@@ -6,6 +6,8 @@ import LogIn from "./pages/LogIn";
 import SignUp from "./pages/SignUp";
 import Sidebar from "./components/Sidebar";
 import VerifyOtp from "./pages/VerifyOtp";
+import Profile from "./pages/Profile";
+import CreateSpace from "./pages/CreateSpace";
 
 function App() {
   const location = useLocation();
@@ -25,6 +27,8 @@ function App() {
             <Route path="/login" element={<LogIn />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/verify-otp" element={<VerifyOtp />} />
+            <Route path="/create-space" element={<CreateSpace />} />
+            <Route path="/profile" element={<Profile />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
